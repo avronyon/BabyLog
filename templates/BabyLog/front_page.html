@@ -56,6 +56,23 @@
 			text-align:center;
 			background-size:contain;
 		}
+
+		.center {
+		    position: absolute;
+		    left: 0;
+		    top: 50%;
+		    width: 100%;
+		    text-align: center;
+		}
+
+		.bottom {
+		    position: absolute;
+		    left: 0;
+		    bottom: 0%;
+		    width: 100%;
+		    text-align: center;
+		}
+
 	</style>
 </head>
 
@@ -77,16 +94,14 @@
             {{ p1.dt|timesince}}
             </div>
         </div>
-        <div style= "height:40%;width:15%;position:absolute;left:5%;top:50%;" onclick="location.href='/BabyLog/{{b1_name}}/medicine'" class="myButton Medicine">
-            <div style= "position:absolute;bottom:0%;height:100%">
-                <div style = "height:50%;position:absolute%;top:0%">
-                    <a style="position:absolute;top:50%">
+        <div style= "height:40%;width:18%;position:absolute;left:3%;top:50%;" onclick="location.href='/BabyLog/{{b1_name}}/medicine'" class="myButton Medicine">
+            <div>
+                <div class="center">
                     {{ b1_m.event_subtype }}
                     </br>
                     {{ b1_m.dt |time:"H:i" }}
-                    </a>
                 </div>
-                <div style = "position:absolute;bottom:0%">
+                <div class = "bottom">
                     {{b1_v}}
                 </div>
             </div>
@@ -109,16 +124,14 @@
                 {{ p2.dt|timesince}}
             </div>
         </div>
-        <div style= "height:40%;width:15%;text-align:center;position:absolute;left:5%;top:50%;" onclick="location.href='/BabyLog/{{b2_name}}/medicine'" class="myButton Medicine">
-            <div style= "position:absolute;bottom:0%;height:100%">
-                <div style = "height:50%;position:absolute%;top:0%">
-                    <a style="position:absolute;top:50%">
+        <div style= "height:40%;width:18%;text-align:center;position:absolute;left:3%;top:50%;" onclick="location.href='/BabyLog/{{b2_name}}/medicine'" class="myButton Medicine">
+            <div>
+                <div class="center">
                         {{ b2_m.event_subtype }}
                         </br>
                         {{ b2_m.dt |time:"H:i" }}
-                    </a>
                 </div>
-                <div style = "position:absolute;bottom:0%">
+                <div class = "bottom">
                     {{b2_v}}
                 </div>
             </div>

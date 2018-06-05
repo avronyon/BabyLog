@@ -10,3 +10,4 @@ migrations/0005_remove_event_event_subtype.py
 migrations/0006_event_event_subtype.py
 migrations/0007_remove_event_event_subtype.py
 migrations/0008_event_event_subtype.py
+static/medicine2.png
