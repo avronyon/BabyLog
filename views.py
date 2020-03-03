@@ -1,6 +1,9 @@
 #!/usr/bin/python
 # coding=utf-8
 
+from __future__ import division
+from builtins import str
+from builtins import range
 from django.shortcuts import render
 from django.http import HttpResponse , HttpResponseRedirect
 import datetime
